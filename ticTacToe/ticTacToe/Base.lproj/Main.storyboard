@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid" translatesAutoresizingMaskIntoConstraints="NO" id="00V-rP-Sqb">
+                                <rect key="frame" x="0.0" y="70" width="375" height="397"/>
+                            </imageView>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xoT-gB-lut" customClass="myView">
+                                <rect key="frame" x="11" y="84" width="100" height="100"/>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w03-h8-J0V" customClass="myView">
+                                <rect key="frame" x="264" y="219" width="100" height="100"/>
+                            </view>
+                            <view tag="9" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAk-zJ-YtY" customClass="myView">
+                                <rect key="frame" x="264" y="352" width="100" height="100"/>
+                            </view>
+                            <view tag="8" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3o-o0-lzf" customClass="myView">
+                                <rect key="frame" x="137" y="352" width="100" height="100"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grh-lG-mSb" customClass="myView">
+                                <rect key="frame" x="264" y="84" width="100" height="100"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewe-95-u6A" customClass="myView">
+                                <rect key="frame" x="137" y="84" width="100" height="100"/>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-eD-byA" customClass="myView">
+                                <rect key="frame" x="137" y="219" width="100" height="100"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sF-lg-Caw" customClass="myView">
+                                <rect key="frame" x="11" y="219" width="100" height="100"/>
+                            </view>
+                            <view tag="7" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4UG-Gd-uWV" customClass="myView">
+                                <rect key="frame" x="11" y="352" width="100" height="100"/>
+                            </view>
+                            <imageView tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="DLH-cN-o4s" customClass="OXImageView">
+                                <rect key="frame" x="21" y="533" width="81" height="81"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="O" translatesAutoresizingMaskIntoConstraints="NO" id="lSs-bC-18V" customClass="OXImageView">
+                                <rect key="frame" x="274" y="533" width="81" height="81"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uct-He-dXa">
+                                <rect key="frame" x="324" y="20" width="35" height="35"/>
+                                <state key="normal" image="help-50"/>
+                                <connections>
+                                    <action selector="helpButtonTapDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="cOe-fI-ryd"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDS-zL-gNl">
+                                <rect key="frame" x="0.0" y="-398" width="375" height="398"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wF-Qf-Kqh">
+                                        <rect key="frame" x="71" y="8" width="233" height="49"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright (c) 2015 __ChenXu__. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o84-rU-YGN">
+                                        <rect key="frame" x="8" y="361" width="359" height="37"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E8-T1-Tlr">
+                                        <rect key="frame" x="345" y="8" width="22" height="22"/>
+                                        <state key="normal" image="cancel-50">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="myAlertDismiss:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eUd-Mo-pJa"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30v-c8-J7I">
+                                        <rect key="frame" x="42" y="65" width="291" height="288"/>
+                                        <mutableString key="text">Tic-tac-toe is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid.The player who succeeds in placing three respective marks in a horizontal, vertical, or diagonal row wins the game.Start to drag symbol to put into any cell!</mutableString>
+                                        <color key="textColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="00V-rP-Sqb" secondAttribute="bottom" constant="200" id="Fxg-0O-ADC"/>
+                            <constraint firstAttribute="trailing" secondItem="00V-rP-Sqb" secondAttribute="trailing" id="jaX-cv-etJ"/>
+                            <constraint firstItem="00V-rP-Sqb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mq1-Le-0fZ"/>
+                            <constraint firstItem="00V-rP-Sqb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="xNI-4V-cQf"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="OImageView" destination="lSs-bC-18V" id="2tv-D6-6PA"/>
+                        <outlet property="XImageView" destination="DLH-cN-o4s" id="PdQ-qD-MbV"/>
+                        <outlet property="infoAlertView" destination="sDS-zL-gNl" id="7IX-wB-ysF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159.5" y="318.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="O" width="130" height="136"/>
+        <image name="X" width="149" height="136"/>
+        <image name="cancel-50" width="50" height="50"/>
+        <image name="grid" width="900" height="600"/>
+        <image name="help-50" width="50" height="50"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
